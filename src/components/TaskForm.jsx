@@ -1,6 +1,6 @@
 import {useContext, useState} from 'react'
 import {taskContext} from '../context/TaskContext'
-
+import img from '../assets/img/imagenes'
 
 function TaskForm() {
 
@@ -24,6 +24,7 @@ function TaskForm() {
   }
   return (
     <div className='max-w-md mx-auto'>
+      <img src={img.img1}></img>
       <form onSubmit={handleSubmit} className='bg-slate-800 p-10 mb-4 '>
         <h1 className='text-2xl text-white font-bolc mb-3 '>Crea Tu Tarea</h1>
         <input placeholder="Ingresa tu tarea" 
